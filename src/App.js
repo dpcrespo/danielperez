@@ -1,9 +1,10 @@
 import './App.scss';
+import { About } from './About';
 
 function App() {
   return (
     <>
-      <header>
+      <header className="sticky">
         <span>DPC</span>
         <nav>
           <ul className="nav-links">
@@ -14,13 +15,15 @@ function App() {
           </ul>
         </nav>
       </header>
-      <section id="about">
-        <h1>About</h1>
-        <p>hola</p>
-      </section>
-      <section id="skills">
-        <h1>Skills</h1>
-      </section>
+      <div className="content">
+        <About />
+        <section
+          className="section"
+          id="skills"
+        >
+          <h1 className="section-title">Skills</h1>
+        </section>
+      </div>
     </>
   );
 }

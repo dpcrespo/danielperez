@@ -1,12 +1,11 @@
-header {
+.sticky {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    height: 5vh;
     padding: 2vh;
-    background-color: burlywood;
 }
 
 nav {
@@ -24,12 +23,37 @@ nav {
             text-decoration: none;
             color: #000000;
             font-size: 16px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
 
-section {
+.content {
+    font-size: 1.25rem;
+    padding: 8px;
+}
+
+.section {
+    height: 100vh
+}
+
+.section-title {
+    font-size: 4rem;
     padding-top: 6vh;
-    height: 100vh;
-    font-size: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.my-name {
+    font-size: 4rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
